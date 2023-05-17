@@ -1,0 +1,110 @@
+@media (min-width: 1025px) {
+    .h-custom {
+    height: 100vh !important;
+    }
+    }
+    .card-registration .select-input.form-control[readonly]:not([disabled]) {
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+    }
+    .card-registration .select-arrow {
+    top: 13px;
+    }
+    
+    .gradient-custom-2 {
+    /* fallback for old browsers */
+    background: white;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: white;
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: white;
+    }
+    
+    .bg-indigo {
+    background-color: white;
+    }
+    @media (min-width: 992px) {
+    .card-registration-2 .bg-indigo {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    }
+    }
+    @media (max-width: 991px) {
+    .card-registration-2 .bg-indigo {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    }
+    }
+
+    .body{
+background-image: im;
+
+
+
+
+    }
+
+
+  
+
+    /*shows the stars side by side, centered, and in reverse order than the HMTL*/
+.rating {
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+/*hides the radio buttons*/
+.rating > input{ display:none;}
+
+/*style the empty stars, sets position:relative as base for pseudo-elements*/
+.rating > label {
+  position: relative;
+  width: 1.1em;
+  font-size: 2vw;
+  color: #FFD700;
+  cursor: pointer;
+  float: right;
+}
+
+/* sets filled star pseudo-elements */
+.rating > label::before{ 
+  content: "\2605";
+  position: absolute;
+  opacity: 0;
+}
+/*overlays a filled start character to the hovered element and all previous siblings*/
+.rating > label:hover:before,
+.rating > label:hover ~ label:before {
+  opacity: 1 !important;
+}
+
+/*overlays a filled start character on the selected element and all previous siblings*/
+.rating > input:checked ~ label:before{
+  opacity:1;
+}
+
+/*when an element is selected and pointer re-enters the rating container, selected rate and siblings get semi transparent, as reminder of current selection*/
+.rating:hover > input:checked ~ label:before{ opacity: 0.4; }
+
+/*just aesthetics*/
+body{ background: #222225; color: white;}
+h1, p{ text-align: center;}
+p{ font-size: 1.2rem;}
+@media only screen and (max-width: 600px) {
+  h1{font-size: 14px;}
+  p{font-size: 12px;}
+}
+
+.imgbox{
+width: 70%;
+height: 100vh;
+background-attachment: fixed;
+background-size: 100% 100%;
+}
+.active:hover{
+  background-color: #5a555c;
+  }

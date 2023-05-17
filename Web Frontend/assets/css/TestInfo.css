@@ -1,0 +1,67 @@
+html,
+body,
+.intro {
+  height: 100vh;
+  /* width: 100vh; */
+}
+
+table td,
+table th {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+  
+ 
+  
+}
+
+.active:hover{
+  background-color: #5a555c;
+  }
+
+
+textarea::-webkit-scrollbar-corner {
+    background-color: transparent;
+  }
+  
+textarea::-webkit-scrollbar {
+    background-color: transparent;
+  }
+
+thead th {
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  font-weight: 200;
+  font-size: larger;
+
+
+}
+
+
+.card {
+  border-radius: .5rem;
+}
+
+.table-scroll {
+  border-radius: .5rem;
+}
+
+.table-scroll table thead th {
+  font-size: 16px;
+}
+thead {
+  top: 0;
+  position: sticky;
+}
+
+.res{
+text-align: center;
+font-weight: bold;
+font-size:50px;
+font-family:Georgia, 'Times New Roman', Times, serif;
+margin-left: 200px;
+padding-top: 35px;
+color: black;
+}

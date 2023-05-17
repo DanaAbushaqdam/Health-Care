@@ -1,0 +1,299 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="keywords" content="">
+    <meta name="description" content=" ">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon"> -->
+    <!-- import font -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito&display=swap"
+    rel="stylesheet">
+    <!-- import font awesome -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- import bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- import main style -->
+    <link rel="stylesheet" href="assets/css/stylesingup.css">
+    <!-- import main style responsive -->
+    <link rel="stylesheet" href="assets/css/style_responsive.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>SignUp </title>
+
+</head>
+<body>
+
+
+
+
+    <section class="h-100 h-custom gradient-custom-2">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12">
+              <div class="card card-registration card-registration-2" style="border-radius: 15px;">
+                <div class="card-body p-0">
+                  <div class="row g-0">
+                    <div class="col-lg-6 ">
+                      <div class="p-5">
+                        <h3 class="fw-normal mb-5" style="color: #474249; font-weight: bolder;">Lab Infomation</h3>
+                             
+                        <div class="row">
+                          <div class="col-md-6 mb-4 pb-2">
+                            <div class="form-outline">
+                                <label class="form-label" for="email">Lab Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                            </div>
+      
+                          </div>
+                 
+                          <div class="col-md-6 mb-4 pb-2">
+                            <div class="form-outline">
+                                <label class="form-label" for="name">Lab Name</label>
+                              <input type="text" id="labName" class="form-control " />
+                            </div>
+      
+                          </div>
+                        </div>
+                        <div class="row">
+                        <div class="col-md-6 mb-4 pb-2">
+                            <div class="form-outline">
+                              <label class="form-label" for="manager">Lab Owner</label>
+                              <input type="text" class="form-control" id="manager">
+                            </div>
+                          </div>
+
+                          <div class="col-md-6 mb-4 pb-2">
+                            <div class="form-outline">
+                                <label class="form-label" for="phone">Lab Phone</label>
+                              <input type="text" id="phone" class="form-control " />
+                            </div>
+                      </div>
+
+
+      </div>
+
+      
+                        <div class="row">
+                          <div class="col-md-6 mb-4 pb-2">
+                            <div class="form-outline">
+                                <label class="form-label" for="password">password</label>
+                                <input type="password" id="password" class="form-control " />
+                              </div>                         
+      
+                          </div>
+
+
+                          <div class="col-md-6 mb-4 pb-2">
+                            <div class="form-outline">
+                                <label class="form-label" for="location">Lab Location</label>
+                              <input type="text" id="location" class="form-control " />
+                            </div>
+
+                    
+                           </div>
+                        </div>
+                          <div class="col-md-6 mb-4 pb-2 mb-md-0 pb-md-0">
+                            <div class="row">
+                                <div class="col-md-6 mb-4 pb-2 mt-md-4 pb-md-0">
+                             <div class="form-outline">
+                                <label class="form-label" for="opentime">Open Time</label>
+                                <input type="time" id="opentime" class="form-control" />
+                              </div>  
+                                </div>
+                                                   
+                                <div class="col-md-6 mb-4 pb-2 mt-md-4 pb-md-0">
+                                    <div class="form-outline">
+                                <label class="form-label" for="closetime">Close Time</label>
+                                <input type="time" id="closetime" class="form-control" />
+                              </div> 
+                                </div>
+
+              
+                            
+                               
+                              </div>
+
+
+
+
+                              <div class="row ">
+                                <div class="form-outline p-3 " id="c12">
+                                  <label class="form-label m-6" for="password">About Your Lab</label>
+                                  <textarea class="form-control m-6" id="aboutLab" name="aboutLab" rows="3"></textarea>
+                                </div>
+
+                              </div>
+
+                              
+                          <div class="col-md-6 mb-4 pb-2 mb-md-2 pb-md-0">
+                            <div class="form-outline ">
+                                <h6 class="form-label" for="location" style="width: 300px;" >Select Your Location</h6>
+                                <!-- <input type="text" id="location" class="form-control form-control-lg my-2" /> -->
+                                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27002.113834744443!2d35.2288768!3d32.224051200000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1670417560183!5m2!1sen!2s" width="550" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                                <div id="map"></div>
+                              </div>   
+                              </div>
+
+
+                          </div>
+                      </div>
+                    </div>
+                     
+                    <div class="col-lg-6 bg-indigo text-white">
+                      <div class="p-5">
+
+                        <label class="form-label pt-4" for="customFile" style="font-size: 20px;">Laboratory license</label>
+                        <input type="file" class="form-control" id="customFile" />
+                        <div class="row pt-0">   
+                         </div>
+                        <h3 class="fw-normal mt-5 mb-0">Tests provided by the laboratory</h3>
+                      <div class="card-body">
+                        <form id="test_form">
+                        <div class="row p-0 mt-0" id="row">
+                            <div class="col-md-4 mb-4 pb-0 pt-2" id="c1">
+                                <div class="form-outline" id="c2">
+                                  <label class="form-label" for="password">Test Category</label>
+                                  <input type="text" id="Category1" class="form-control"  />
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-4 pb-0 pt-2" id="c3">
+                                <div class="form-outline" id="c4">
+                                  <label class="form-label" for="password">Test Name</label>
+                                  <input type="text" id="name1" class="form-control " name="test" />
+                                </div>
+                            </div>
+                            <div class="col-md-2 mb-4 pb-0 pt-2" id="c5">
+                                <div class="form-outline" id="c6">
+                                  <label class="form-label" for="password">Test Price</label>
+                                  <input  type="number" id="Price1" class="form-control" name="price" />
+                                </div>
+                            </div>
+
+                            <div class="col-md-2 mb-4 pb-0 pt-0" id="c21">
+                              <div class="form-outline" id="c22">
+                                <label class="form-label p-0 " for="flexCheckChecked" name="home">Home Visit</label>
+                                <input class="form-check-input " type="checkbox" value="" name="home" id="flexCheckChecked1" >
+                              </div>
+                          </div>
+
+                          <div class="col-md-3 mb-4 pb-0 pt-2" id="c57">
+                            <div class="form-outline" id="c67">
+                              <label class="form-label" for="password">Max value</label>
+                              <input  type="number" id="max1" class="form-control" name="max" />
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 mb-4 pb-0 pt-2" id="c58">
+                          <div class="form-outline" id="c88">
+                            <label class="form-label" for="password">Min value</label>
+                            <input  type="number" id="min1" class="form-control" name="min" />
+                          </div>
+                      </div>
+
+                          
+
+                           
+                                <div class="form-outline " id="c8">
+                                  <label class="form-label mt-0" for="password" >About The Test </label>
+                                  <textarea class="form-control " id="exampleFormControlTextarea1" name="about" rows="2"></textarea>
+                                </div>
+
+
+
+
+                        </div>
+                        <div></div>
+                      </form>
+                     <button class="btn btn-outline-light float-right mt-4"  onclick="add_more_feild()">Add more +</button>
+                    </div>
+                    
+                    <div class="row">
+                        
+                      <div class="form-row p-4">
+                       
+                       <label style="font-size: 14px;"> Check manager email to know if your request is accepted or not </label>
+                       <label> </label>
+                       <label> </label>
+                       <button type="button" class="btn btn-dark" onclick="onSignUpPressed()"> Register</button>
+                      </div>
+                      </div>
+
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+</body>
+<!-- Section: Design Block -->
+<!-- Section: Design Block -->
+    <!-- import bootstrap js  -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./signup.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+   
+    <!-- jquery lib -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    
+     <!-- my js file -->
+     <script src="assets/js/script.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
+      crossorigin="anonymous"></script>
+
+      <!-- <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg"
+     async
+    ></script>
+    <script>
+
+   let map;
+
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: 28.3949, lng: 48.1240 },
+    zoom: 8,
+  });
+const marker= new google.maps.marker({
+position : { lat: 28.3949, lng: 48.1240 },
+title :"marker ",
+draggable : true,
+
+})
+const popupContent = new google.maps.InfoWindow()
+google.maps.event.addListener(marker ,'click', (function(marker){
+
+return function(){
+  popupContent.setContent("this is")
+  popupContent.open(map,marker)
+}
+}
+)(marker)
+)
+marker.setMap(map);
+
+    </script> -->
+   
+
+
+
+    
+     
+
+</html>

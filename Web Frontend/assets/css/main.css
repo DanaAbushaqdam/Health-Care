@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+    transition: all 0.2s ease;
+
+}
+body{
+    background-color: white;
+
+}
+
+   
+ .features_top{
+    text-align: center;
+
+}
+ h1{
+    margin-bottom: 1rem;
+    color: #3e3a3f;
+    letter-spacing: 0.01rem;
+}
+
+
+.active:hover{
+    color:rgb(19, 102, 116)}
+.container{
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 0 8%; 
+}
+
+ i {
+    font-size: 1.5rem;
+
+    padding-left: 1.5rem;
+   color:rgb(19, 102, 116);
+
+}
+
+a:link, a:visited {
+
+    color:#3e3a3f;
+    text-decoration: none;
+   
+  }
+
+
+.featuereItem_info p{
+color: #7c8595;
+letter-spacing: 0.01rem;
+font-weight: 100;
+}
+
+.card-body:hover{
+border-bottom: 2px solid rgb(19, 102, 116);
+/* border-top: 2px solid #5b2991; */
+}
+.card-body{
+    height: 105px;
+    border: #a8a7aa solid 1px;
+    border-radius:15px;
+
+}
+.card-body:hover i{
+    transform: scale(1.05);
+}

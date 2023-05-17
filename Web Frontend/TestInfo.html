@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="keywords" content="">
+    <meta name="description" content=" ">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon"> -->
+    <!-- import font -->
+   
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito&display=swap"
+    rel="stylesheet">
+    <!-- import font awesome -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- import bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- import main style -->
+    <link rel="stylesheet" href="assets/css/TestInfo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- import main style responsive -->
+    <link rel="stylesheet" href="assets/css/style_responsive.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script  src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
+<script src="bootstable.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+ 
+<!--JS -->
+<script  src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="   crossorigin="anonymous"></script>
+<script src="bootstable.min.js"></script>
+
+    <title> TestInfo</title>
+<style>
+ .intro{
+    /* background-image: linear-gradient(rgba(203, 203, 203, 0.762) , rgba(255, 255, 255, 0.6)), url('assets/img/labbb.jpg'); */
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  height: 92.5vh;
+  
+ }   
+.btn1 {
+  background-color:white;
+  border: none;
+  color: rgb(190, 18, 18);
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn2 {
+  background-color:white;
+  border: none;
+  color: rgb(185, 194, 66);
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #3e3a3f;
+  border-color: #572a77;
+  
+}
+
+li {
+  float: right;
+  padding-right: 50px;
+  font-size: 16px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: white;
+
+}
+
+.textarea{
+width: 200px;
+
+}
+
+
+</style>
+
+
+</head>
+
+<body >
+
+  <ul>
+    <li><a class="active" href="index.html" style="color: white;">Log out</a></li>
+    <li><a class="active" href="main.html" style="color: white;">Home</a></li>
+    <li style="font-size: 22px; text-align:left; color: white; padding-top: 16px;margin-right: 900px;">Health Care</li>
+  
+  </ul>
+
+<section class="intro" style="position: static;" >
+  <label class="res"  style="color:  rgb(41, 65, 70);" 
+ 
+  >Test Information</label>
+  <div class="bg-image" style="background-color: transparent;">
+    <div class="mask pt-3">
+      <div class="container">
+        <div class="row justify-content-center">
+
+
+
+
+          <div class="addForm">
+            <div class="container border  my-4" style="  width: 40%; margin:auto;">
+              <form id="test_form">
+                <div class="row p-0 mt-0" id="row">
+                    <div class="col-md-4 mb-4 pb-0 pt-2" id="c1">
+                        <div class="form-outline" id="c2">
+                          <label class="form-label" for="password">Test Category</label>
+                          <input type="text" id="Category1" class="form-control"  />
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-4 pb-0 pt-2" id="c3">
+                        <div class="form-outline" id="c4">
+                          <label class="form-label" for="password">Test Name</label>
+                          <input type="text" id="name1" class="form-control " name="test" />
+                        </div>
+                    </div>
+                    <div class="col-md-2 mb-4 pb-0 pt-2" id="c5">
+                        <div class="form-outline" id="c6">
+                          <label class="form-label" for="password">Test Price</label>
+                          <input  type="number" id="Price1" class="form-control" name="price" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-2 mb-4 pb-0 pt-0" id="c21">
+                      <div class="form-outline" id="c22">
+                        <label class="form-label p-0 " for="flexCheckChecked" name="home">Home Visit</label>
+                        <input class="form-check-input " type="checkbox" value="" name="home" id="flexCheckChecked1" >
+                      </div>
+                  </div>
+
+                  <div class="col-md-3 mb-4 pb-0 pt-2" id="c57">
+                    <div class="form-outline" id="c67">
+                      <label class="form-label" for="password">Max value</label>
+                      <input  type="number" id="max1" class="form-control" name="max" />
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4 pb-0 pt-2" id="c58">
+                  <div class="form-outline" id="c88">
+                    <label class="form-label" for="password">Min value</label>
+                    <input  type="number" id="min1" class="form-control" name="min" />
+                  </div>
+              </div>
+
+                  
+
+                   
+                        <div class="form-outline " id="c8">
+                          <label class="form-label mt-0" for="password" >About The Test </label>
+                          <textarea class="form-control " id="exampleFormControlTextarea1" name="about" rows="2"></textarea>
+                        </div>
+
+
+
+
+                </div>
+                <div>
+
+                </div>
+              </form>
+              <div class="formBtn ms-auto text-end py-2">
+                <button type="button" id="addConfirm" class="btn btn-secondary">confirm</button>
+               <button type="button" id="addCancle" class="btn btn-dark">cancel</button>
+            </div>
+            </div>
+          </div>
+
+
+
+
+          
+              <div class="updateForm">
+                <div class="container border  my-4" style="  width: 40%; margin:auto;">
+                  <form id="test_form">
+                    <div class="row p-0 mt-0" id="row">
+                        <div class="col-md-4 mb-4 pb-0 pt-2" id="c1">
+                            <div class="form-outline" id="c2">
+                              <label class="form-label" for="password">Test Category</label>
+                              <input type="text" id="upCategory1" class="form-control"  />
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-4 pb-0 pt-2" id="c3">
+                            <div class="form-outline" id="c4">
+                              <label class="form-label" for="password">Test Name</label>
+                              <input type="text" id="upname1" class="form-control " name="test" />
+                            </div>
+                        </div>
+                        <div class="col-md-2 mb-4 pb-0 pt-2" id="c5">
+                            <div class="form-outline" id="c6">
+                              <label class="form-label" for="password">Test Price</label>
+                              <input  type="number" id="upPrice1" class="form-control" name="price" />
+                            </div>
+                        </div>
+    
+                        <div class="col-md-2 mb-4 pb-0 pt-0" id="c21">
+                          <div class="form-outline" id="c22">
+                            <label class="form-label p-0 " for="flexCheckChecked" name="home">Home Visit</label>
+                            <input class="form-check-input " type="checkbox" value="" name="home" id="upflexCheckChecked1" >
+                          </div>
+                      </div>
+    
+                      <div class="col-md-3 mb-4 pb-0 pt-2" id="c57">
+                        <div class="form-outline" id="c67">
+                          <label class="form-label" for="password">Max value</label>
+                          <input  type="number" id="upmax1" class="form-control" name="max" />
+                        </div>
+                    </div>
+    
+                    <div class="col-md-3 mb-4 pb-0 pt-2" id="c58">
+                      <div class="form-outline" id="c88">
+                        <label class="form-label" for="password">Min value</label>
+                        <input  type="number" id="upmin1" class="form-control" name="min" />
+                      </div>
+                  </div>
+    
+                      
+    
+                       
+                            <div class="form-outline " id="c8">
+                              <label class="form-label mt-0" for="password" >About The Test </label>
+                              <textarea class="form-control " type="text" id="upexampleFormControlTextarea1" name="about" rows="2"></textarea>
+                            </div>
+    
+    
+    
+    
+                    </div>
+                    <div></div>
+                  </form>
+
+                <div class="formBtn ms-auto text-end py-2">
+                  <button type="button" id="updateConfirm" class="btn btn-secondary">confirm</button>
+                 <button type="button" id="updateCancle" class="btn btn-dark">cancel</button>
+              </div>
+             
+          </div>
+          </div>
+
+
+
+
+
+          <div class="col-12 pt-4"style="color: transparent;">
+            <div class="card" style="color: transparent;">
+              <div class="card-body  p-0" style="color: transparent;">
+                <div class="table-responsive " data-mdb-perfect-scrollbar="true" style="position: relative; height: 430px">
+                  <table class="table table-hover" name="test" id="test">
+                    <thead style="background-color: rgb(41, 65, 70);">
+                      <tr >
+                        <th class="th1" scope="col">Test Categories</th>
+                        <th class="th1" scope="col">Test Name</th>
+                        <th class="th1" scope="col">Test Price</th>
+                        <th class="th1" scope="col">About Test</th>
+                        <th class="th1" scope="col">Min values</th>
+                        <th class="th1" scope="col">Max values</th>
+                        <th class="th1" scope="col">Home Visit</th>
+                        <th class="th1" scope="col">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody id="testInfo">
+       
+
+                    </tbody>
+                  </table>
+                  
+                </div>
+                
+              </div>
+              
+            </div>
+
+
+         <row class="rw" style="margin-left: 1000px;" >
+              
+           <button class="btn btn-secondary " style="background-color:rgb(41, 65, 70) ; width: 110px;margin-top: 10px; "onclick="onAddPressed()" id="addBtn"> Add </button>
+
+
+            </row>
+
+            
+     
+          </div>
+
+
+          
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="./testinfo.js"></script>
+<!-- jquery lib -->
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+ <!-- my js file -->
+ <script src="assets/js/getAllLabs.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
+  crossorigin="anonymous"></script>
+  </html>
